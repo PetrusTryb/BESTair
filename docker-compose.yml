@@ -1,0 +1,21 @@
+services:
+  backend:
+    image: back-end
+    build:
+      context: ./back-end
+      dockerfile: Dockerfile
+    ports:
+        - "5000:5000"
+    volumes:
+      - ./back-end:/app
+  frontend:
+    image: front-end
+    build:
+      context: ./front-end
+      dockerfile: Dockerfile
+    ports:
+        - "80:80"
+    volumes:
+      - ./front-end:/app
+    depends_on:
+      - backend

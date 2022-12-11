@@ -1,0 +1,6 @@
+pyenv/
+datafiles/
+*.tar.gz
+*.zip
+*.pyc
+data.db

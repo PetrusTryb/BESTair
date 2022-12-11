@@ -1,0 +1,5 @@
+flask
+openpyxl
+geopy
+dependency_injector
+flask-cors
